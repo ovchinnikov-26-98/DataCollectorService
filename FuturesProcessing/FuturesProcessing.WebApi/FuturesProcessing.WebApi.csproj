@@ -12,9 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Data.PostgreSql\Common.Data.PostgreSql.csproj" />
     <ProjectReference Include="..\..\Common\Common.WebApi\Common.WebApi.csproj" />
     <ProjectReference Include="..\FuturesProcessing.Api\FuturesProcessing.Api.csproj" />
     <ProjectReference Include="..\FuturesProcessing.BusinessLogic\FuturesProcessing.BusinessLogic.csproj" />
+    <ProjectReference Include="..\FuturesProcessing.Data\FuturesProcessing.Data.csproj" />
   </ItemGroup>
 
 </Project>

@@ -22,10 +22,10 @@ namespace FuturesProcessing.BusinessLogic
             _ = serviceCollection.AddTransient<IDataProvider, BinanceDataProvider>();
             _ = serviceCollection.AddTransient<IFuturesManipulationsService, FuturesManipulationsService>();
 
-            _ = serviceCollection.AddTransient<IOperationAsync<FuturesContract, PriceProcessedItem>, ProcessingFuturesOperationAsync>();
+            _ = serviceCollection.AddTransient<IOperationAsync<FuturesCoupleContract, ArbitrageResultItem>, ProcessingFuturesOperationAsync>();
             _ = serviceCollection.AddTransient<IOperationAsync<FuturesContract, FuturesPriceItem>, GetDataOperation>();
 
-            _ = serviceCollection.AddTransient<IValidatorAsync<FuturesContract>, FuturesContractValidator>();
+            _ = serviceCollection.AddTransient<IValidatorAsync<FuturesCoupleContract>, FuturesContractValidator>();
         }
 
     }

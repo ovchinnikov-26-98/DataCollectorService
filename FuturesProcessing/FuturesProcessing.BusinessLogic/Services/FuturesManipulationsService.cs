@@ -18,9 +18,9 @@ namespace FuturesProcessing.BusinessLogic.Services
             return await ExecuteContractAsync<FuturesContract, FuturesPriceItem>(contract);
         }
 
-        public async Task<Result<PriceProcessedItem>> ProcessingFuturesAsync(FuturesContract contract)
+        public async Task<Result<ArbitrageResultItem>> ProcessingFuturesAsync(FuturesCoupleContract contract)
         {
-            return await ExecuteContractAsync<FuturesContract, PriceProcessedItem>(contract);
+            return await ExecuteContractAsync<FuturesCoupleContract, ArbitrageResultItem>(contract);
         }
     }
 }

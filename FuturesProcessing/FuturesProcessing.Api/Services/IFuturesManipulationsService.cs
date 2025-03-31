@@ -8,6 +8,6 @@ namespace FuturesProcessing.Api.Services
     {
         public Task<Result<FuturesPriceItem>> GetDataAsync(FuturesContract contract);
 
-        public Task<Result<PriceProcessedItem>> ProcessingFuturesAsync(FuturesContract contract);
+        public Task<Result<ArbitrageResultItem>> ProcessingFuturesAsync(FuturesCoupleContract contract);
     }
 }
